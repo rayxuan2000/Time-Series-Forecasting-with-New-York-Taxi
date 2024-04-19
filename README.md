@@ -10,7 +10,6 @@ You can find them in the same repo as this readme file.
 
 ## Summary
 - Used Yahoo’s stock price from 2015 to 2020 (data size = 1825) as a time series for analysis and forecasting via **Python**.
-- Conducted exploratory data analysis with a focus on visualizations including component decomposition, temporal variations and downsampling method etc. to comprehend the dynamics of the stock price data.
-- Generated autocorrelation (tails off) and partial autocorrelation (cuts off at lag 2) plots to assess temporal dependencies and guide model selection.
-- Fine-tuned ARIMA model (p=2, d=2, q=1) using original data, performed in-sample prediction (MSE = 1365.23) and
-out-of-sample prediction (MSE = 61618.47) to discern disparities between them.
+- Conducted exploratory data analysis with a focus on visualizations including **component decomposition**, **temporal variations** and **downsampling method** etc. to comprehend the dynamics of the stock price data.
+- Generated **autocorrelation** (tails off) and **partial autocorrelation** (cuts off at lag 2) plots to guide model selection.
+- Fine-tuned **ARIMA model** (p=2, d=2, q=1) using original data and **cut down prediction MSE** more than 60000 by substituting out-of-sample prediction (MSE = 61618.47) with in-sample prediction (MSE = 1365.23).
