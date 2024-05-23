@@ -1,15 +1,19 @@
 # Time-Series-Forecasting-with-New-York-Taxi
 
 ## Introduction
-This project mainly focuses on the principle and application of time series theory. I used a classic dataset about stock price to implement on. 
+This project mainly focuses on the principle and application of time series theory. I used New York taxi data to implement on. 
 
 ## Code and Data
 You can find them in the same repo as this readme file.
 
-[Data source](https://finance.yahoo.com/)
+[Data source](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
 ## Summary
-- Used Yahoo’s stock price from 2015 to 2020 (data size = 1825) as a time series for analysis and forecasting via **Python**.
-- Conducted exploratory data analysis with a focus on visualizations including **component decomposition**, **temporal variations** and **downsampling method** etc. to comprehend the dynamics of the stock price data.
-- Generated **autocorrelation** (tails off) and **partial autocorrelation** (cuts off at lag 2) plots to guide model selection.
-- Fine-tuned **ARIMA model** (p=2, d=2, q=1) using original data and cut down prediction MSE more than 60000 by substituting **out-of-sample** prediction (MSE = 61618.47) with **in-sample** prediction (MSE = 1365.23).
+- Developed a Python workflow for collecting, cleaning, storing, and analyzing over 10GB of New York cab trip records
+from 2010 to 2024, and created Tableau dashboards to visualize the data and support decision-making at higher levels.
+- Conducted exploratory data analysis, including component decomposition, rate of change, sliding averages, and downsam-
+pling; performed ADF stability testing and differential smoothing.
+- Generated autocorrelation and partial autocorrelation plots, fine-tuned and compared multiple time series models, reduc-
+ing the Akaike Information Criterion (AIC) by approximately 12%.
+- Proposed and validated a hypothesis testing model for cab passenger flow using external data and Poisson regression,
+establishing a significant correlation between passenger flow and commercial activities.
