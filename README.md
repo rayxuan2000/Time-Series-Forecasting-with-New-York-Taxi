@@ -1,4 +1,4 @@
-# Time-Series-Forecasting-with-Yahoo-Stock-Price
+# Time-Series-Forecasting-with-New-York-Taxi
 
 ## Introduction
 This project mainly focuses on the principle and application of time series theory. I used a classic dataset about stock price to implement on. 
