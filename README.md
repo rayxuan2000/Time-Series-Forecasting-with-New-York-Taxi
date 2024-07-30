@@ -19,8 +19,7 @@ You can find them in the same repo as this readme file.
 - Use ACF and PACF plots to determine param of models. If PACF tails off and ACF cuts off then determine MA otherwise AR.
 - Models used in this project: AR, MA, ARMA, ARIMA. AR use previous values, MA use previous errors, ARMA combines the two and ARIMA introduce differencing.
 - About **AIC**: AIC, or the Akaike Information Criterion, is a measure of the goodness of fit of a statistical model. It takes into account both the model's likelihood and its complexity, providing a balance between accuracy and simplicity. In time series analysis, AIC is commonly used to compare different models and select the most appropriate one for time series forecasting. AIC=2k−2ln(L) where k is number of parameters and L is likelihood function.
-- I hypothesize that there is a correlation between cab ride demand and FOMC during a certain time window. Then use **Poisson regression** to verify hypotheses, especially if your data involves count variables that follow a Poisson distribution.
-- **Steps to follow**:
+- I hypothesize that there is a correlation between cab ride demand and FOMC during a certain time window. Then use **Poisson regression** to verify hypotheses, especially if your data involves count variables that follow a Poisson distribution. **Steps to follow**:
 ```
 1.Model Specification: Formulate a Poisson regression model with your count data as the dependent variable and your predictor variables as the independent variables;
   
