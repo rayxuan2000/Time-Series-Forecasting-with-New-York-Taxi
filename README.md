@@ -21,6 +21,7 @@ You can find them in the same repo as this readme file.
 - About **AIC**: AIC, or the Akaike Information Criterion, is a measure of the goodness of fit of a statistical model. It takes into account both the model's likelihood and its complexity, providing a balance between accuracy and simplicity. In time series analysis, AIC is commonly used to compare different models and select the most appropriate one for time series forecasting. AIC=2k−2ln(L) where k is number of parameters and L is likelihood function.
 - I hypothesize that there is a correlation between cab ride demand and FOMC during a certain time window. Then use **Poisson regression** to verify hypotheses, especially if your data involves count variables that follow a Poisson distribution.
 - **Steps to follow**:
+```
 1.Model Specification: Formulate a Poisson regression model with your count data as the dependent variable and your predictor variables as the independent variables;
   
 2.Fit the Model: Use statistical software (like R, Python's statsmodels, etc.) to fit the Poisson regression model to your data; 
@@ -30,9 +31,9 @@ You can find them in the same repo as this readme file.
 4.Interpret the Coefficients: After fitting the model, examine the estimated coefficients and their standard errors. Most statistical software will provide a z-test for each coefficient, which you can use to determine if each coefficient is significantly different from zero; 
 
 5.P-values and Significance: Check the p-values associated with the z-tests. If a p-value is below your chosen significance level (e.g., 0.05), you can reject the null hypothesis for that predictor. 
-
+```
 Here I use ride counts as dependent variable, FOMC flag, weekday, year and month as indicator.
-  
+
 ## Summary
 - Developed a Python workflow for collecting, cleaning, storing, and analyzing over 10GB of New York cab trip records
 from 2010 to 2024, and created Tableau dashboards to visualize the data and support decision-making at higher levels.
